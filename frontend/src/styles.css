@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/dk-crayon-crumble');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 60%;
+    font-family: 'DK Crayon Crumble', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
+
+div, ul, li, input, button, textarea {
+    border-radius: 30px;
+}
+
+#button-delete, .edit-button {
+    display: inline-block;
+    flex: 1;
+    align-items: center;
+    margin: 5px;
+}
+
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+#form-container, #task-list {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+input, textarea  {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    justify-content: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#button-delete, #delete-all-tasks {
+    justify-content: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ff8300;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#button-delete:hover, #delete-all-taks {
+    background-color: #ffa84c;
+}
+
+button:hover {
+    background-color: #4CA2FF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.task-title, .task-description {
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+@keyframes glow {
+    10% {
+        box-shadow: 0 0 10px 5px #ffa84c;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+.glow-effect {
+    animation: glow 3s ease-out !important;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
